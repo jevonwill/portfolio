@@ -1,2 +1,2 @@
 # hello-world
-ide
+Trying to commit to github from gitpod is hard

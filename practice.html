@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>repl.it</title>
+
+  </head>
+  <body>
+    <script>
+        window.onload = function(){
+            var color = document.getElementById("button1");
+            var font = document.getElementById("button2");
+
+                font.onclick=function(){
+                  document.getElementById("bluebox").style.fontSize = "50px";
+                }
+
+                color.onclick=function(){
+                    document.getElementById("bluebox").style.backgroundColor = "red";
+                }
+        }
+    </script>
+    <div id="bluebox"> Color will change </div>
+
+    <button id="button2"> Click to change font</button>
+
+    <button id="button1"> Click to change colot </button>
+
+  </body>
+</html>
