@@ -1,32 +1,71 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>repl.it</title>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- stylesheet-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <!-- stylesheet-->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+   <!-- stylesheet-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
 
-  </head>
-  <body>
-    <script>
-        window.onload = function(){
-            var color = document.getElementById("button1");
-            var font = document.getElementById("button2");
+<div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top ">
+      <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-camera"> </span> myArtStudio</a>
+    </div>
 
-                font.onclick=function(){
-                  document.getElementById("bluebox").style.fontSize = "50px";
-                }
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#">HOME</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">PORTFOLIO</a></li>
+      <li><a href="#">CONTACT US</a></li>
+    </ul>
+  
+    </nav>
+    
+    <div class="jumbotron text-center">
+    <img src="https://picsum.photos/id/1048/1200/400" class="img-responsive img-rounded" alt="Cinque Terre">
+  </div>
 
-                color.onclick=function(){
-                    document.getElementById("bluebox").style.backgroundColor = "red";
-                }
-        }
-    </script>
-    <div id="bluebox"> Color will change </div>
+  <div class="row text-center text-muted">
+    <div class="col-sm-3">
+      <h3 class="text-uppercase"> Timeless Classics</h3>
+      </br>
+      <img src="https://picsum.photos/400/" class="img-responsive img-rounded">
+      </br>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+    </div>
 
-    <button id="button2"> Click to change font</button>
+    <div class="col-sm-3">
+      <h3 class="text-uppercase"> Unique Artwork </h3>
+      </br>
+      <img src="https://picsum.photos/400/" class="img-responsive img-rounded">
+      </br>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+    </div>
 
-    <button id="button1"> Click to change colot </button>
+    <div class="col-sm-3">
+      <h3 class="text-uppercase"> Original Photos</h3>
+      </br>
+      <img src="https://picsum.photos/400/" class="img-responsive img-rounded">
+      </br>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+    </div>
+  
+  </div>
 
-  </body>
+  <footer class="container-fluid text-center">
+  <p class="small"> Copyright Jevon 2019</p>
+  </footer>
+</div>
+
+</body>
 </html>
