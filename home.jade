@@ -1,0 +1,49 @@
+doctype html
+html(lang='en')
+  head
+    title Bootstrap Example
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // stylesheet
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css')
+    // stylesheet
+    link(href='style.css', rel='stylesheet', type='text/css')
+    // stylesheet
+    link(href='https://fonts.googleapis.com/css?family=Montserrat', rel='stylesheet')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js')
+  body
+    .container-fluid
+      nav.navbar.navbar-inverse
+        .container-fluid
+          .navbar-header
+            h1.head1
+              span.glyphicon.glyphicon-chevron-up  
+              |  Astro
+          ul.nav.navbar-nav.navbar-right
+            li.active
+              a(href='home.html') HOME
+            li
+              a(href='knowledge.html') KNOWLEDGE BASE
+            li
+              a(href='faq.html') FAQ
+            |           >
+      .container-fluid
+        .row
+          .col-sm-3
+            ul
+              li.sidebar
+                a(href='chatflow.html') CHAT FLOW
+              li.sidebar
+                a(href='incident.html') REOCCURING INCIDENTS
+              a(href='incident.html')
+              li.sidebar
+                a(href='incident.html')
+                a(href='submit.html') SUBMIT A KB
+              li.sidebar
+                a(href='submit.html') REGISTER
+              li.sidebar
+                a(href='submit.html') LOGIN
+          .col-sm-9 .col-sm-8
+        footer.container-fluid.text-center
+          p.small  Copyright Jevon 2019
